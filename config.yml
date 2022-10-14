@@ -1,4 +1,4 @@
-baseURL: ""
+baseURL: "https://blog-kortkamp.vercel.app"
 languageCode: "pt-BR"
 defaultContentLanguage: pt-br
 title: korkamp.dev
