@@ -1,4 +1,6 @@
 baseURL: "https://examplesite.com/"
+languageCode: "pt-BR"
+defaultContentLanguage: pt-br
 title: korkamp.dev
 paginate: 5
 theme: PaperMod
@@ -26,13 +28,13 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -52,21 +54,21 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "KORTKAMP"
+    text: "Kortkamp"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
+    enabled: true # needs to be explicitly set
+    title: Marcelo Teixeira
+    subtitle: "Falo sobre tecnologias Web"
+    imageUrl: "https://avatars.githubusercontent.com/u/236848"
+    imageWidth: 160
+    imageHeight: 160
+    imageTitle: Marcelo
     buttons:
-      - name: Posts
+      - name: Blog
         url: posts
       - name: Tags
         url: tags
@@ -114,10 +116,10 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: Categories
+    - identifier: categorias
+      name: Categorias
       url: /categories/
-      weight: 10
+      weight: 20
     - identifier: tags
       name: Tags
       url: /tags/
@@ -125,7 +127,11 @@ menu:
     - identifier: blog
       name: Blog
       url: /posts/
-      weight: 30
+      weight: 10
+    - name: Sobre
+      identifier: about
+      url: about/
+      weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
