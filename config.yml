@@ -1,4 +1,4 @@
-baseURL: "https://examplesite.com/"
+baseURL: "./"
 languageCode: "pt-BR"
 defaultContentLanguage: pt-br
 title: korkamp.dev
@@ -18,8 +18,8 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: KortkampBlog
+  description: "Blog about web development technologies"
   keywords: [Blog, Portfolio, PaperMod]
   author: Marcelo
   # author: ["Me", "You"] # multiple authors
